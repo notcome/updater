@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var githubhook = require('githubhook');
 var console = require('console');
 var github = githubhook({port: 8000});
