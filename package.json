@@ -4,6 +4,7 @@
   "author": "Minsheng Liu <notcome@me.com>",
   "description": "Synced your GitHub projects.",
   "main": "index.js",
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/notcome/updater.git"
