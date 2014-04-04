@@ -6,7 +6,7 @@ var github = githubhook({port: 8000});
 var exec = require('child_process').exec;
 var fs = require('fs');
 
-var config = fs.readFileSync('/etc/updater.conf');
+var config = fs.readFileSync('/etc/updater.conf', { encoding : 'utf8' });
 console.log('Config file loaded');
 console.log(config);
 
