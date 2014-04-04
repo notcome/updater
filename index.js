@@ -8,7 +8,7 @@ var fs = require('fs');
 
 var config = fs.readFileSync('/etc/updater.conf');
 console.log('Config file loaded');
-console.log(config;)
+console.log(config);
 
 config = JSON.parse(config);
 var repos = config.repos;
