@@ -13,6 +13,6 @@
     "node": ">=0.10"
   },
   "devDependencies": {
-    "githubhook": "*",
+    "githubhook": "*"
   }
 }
