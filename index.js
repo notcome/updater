@@ -1,7 +1,8 @@
 var githubhook = require('githubhook');
 var console = require('console');
 var github = githubhook({port: 8000});
-var exec = require('child_process').exec
+var exec = require('child_process').exec;
+var fs = require('fs');
 
 var repos = {
   'Selveskii.me': '/root/git_test/Selveskii.me'
