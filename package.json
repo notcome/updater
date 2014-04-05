@@ -1,6 +1,6 @@
 {
   "name": "updater",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Minsheng Liu <notcome@me.com>",
   "description": "Synced your GitHub projects.",
   "main": "index.js",

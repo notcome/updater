@@ -18,9 +18,12 @@ var repos = {
 }
 
 function pullGenerator (reponame) {
-  var repopath = repos[reponame];
+  var repopath = repos[reponame].path,
+      repouser = repos[reponame].user;
+      
   return function (event, ref) {
-    exec(__dirname + '/git-pull ' + repopath, function (err, out, err) {
+    var cmd = [__dirname + '/git-pull', repopath, repouser].join(' ');
+    exec(cmd, function (err, out, err) {
       if (err) console.error('exec error:\n' + err);
       console.log(reponame, event, ref);
       console.log(out);

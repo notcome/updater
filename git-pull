@@ -3,3 +3,4 @@
 cd $1
 echo $1
 git pull
+chown -R $2 .
